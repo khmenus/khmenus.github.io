@@ -82,7 +82,7 @@ footer .copy-right {
 .navbar-main {
     height: 60px;
     background-color: #fff !important;
-    border-bottom: solid 1px #2e74b5;
+    border-bottom: solid 1px #bf4747;
 }
 
 .navbar-main .navbar-collapse { 
@@ -174,7 +174,7 @@ footer .copy-right {
 }
 
 .texti-main {
-    color: #2e74b5;
+    color: #bf4747;
 }
 
 .texti-error {

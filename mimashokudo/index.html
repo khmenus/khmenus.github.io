@@ -34,15 +34,17 @@
       color: #fff;
       font-size: 1.4em;
       font-family: Questrial;
-      text-align: justify;
-      text-justify: distribute-all-lines;
-      text-align-last: justify;
       padding: 0;
+      text-align: justify;
+      text-align-last: justify;
     }
     td.tcenter {
       text-align: center;
-      text-justify: none;
       text-align-last: center;
+    }
+    td.tright {
+      text-align: right;
+      text-align-last: right;
     }
     table tr td i {
       color: #d0c58f;
@@ -70,7 +72,7 @@
     table tr td div.none {
       color: transparent;
       border: 1px solid transparent;
-      width: 5em;
+      width: 4.8em;
       padding: 0 10px;
     }
     table tr td div span.green,
@@ -87,12 +89,14 @@
     }
     .pstext {
       color: #d0c58f;
-      font-size: 0.75em;
+      font-size: 0.8em;
       padding: 1em;
     }
     @media (max-width:767px) {
         table tr td {
-          font-size: 0.9em;
+          font-size: 1.2em;
+          text-align: left;
+          text-align-last: left;
         }
         #my-carousel {
           margin-top: 36px;
@@ -169,25 +173,25 @@
               <tr>
                 <td><i class="fas fa-thumbs-up"></i></td>
                 <td>舒菲58℃安格斯嫩肩牛排丼</td>
-                <td><div>4.5盎司</div></td>
+                <td class="tright"><div>4.5盎司</div></td>
                 <td>270</td>
               </tr>
               <tr>
                 <td><i class="fas fa-thumbs-up invisible"></i></td>
                 <td>舒菲台塑風味帶骨牛小排醬燒丼</td>
-                <td><div>7盎司</div></td>
+                <td class="tright"><div>7盎司</div></td>
                 <td>280</td>
               </tr>
               <tr>
                 <td><i class="fas fa-thumbs-up invisible"></i></td>
                 <td>58℃低溫舒菲安格斯紐約客丼</td>
-                <td><div>6盎司</div></td>
+                <td class="tright"><div>6盎司</div></td>
                 <td>350</td>
               </tr>
               <tr>
                 <td><i class="fas fa-thumbs-up"></i></td>
                 <td>58℃舒菲澳洲和牛牛臀心定食</td>
-                <td><div>6盎司</div></td>
+                <td class="tright"><div>6盎司</div></td>
                 <td>799</td>
               </tr>
             </tbody>

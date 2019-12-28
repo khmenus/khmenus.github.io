@@ -8,17 +8,97 @@
   <meta name="author" content="EachMobi">
   <meta property="og:site_name" content="覓馬食堂">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://eachmobi.com/img/logo.png">
-  <meta property="og:url" content="https://eachmobi.com/">
+  <meta property="og:image" content="https://khmenus.tw/img/logo.png">
+  <meta property="og:url" content="https://khmenus.tw/">
   <meta property="og:description" content="覓馬食堂">
   <title>覓馬食堂</title>
-  <link rel="icon" type="image/x-icon" href="favicon.png">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" type="image/x-icon" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Quicksand'>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial">
   <link rel="stylesheet" href="/static/bootstrap.min.css">
   <link rel="stylesheet" href="/static/fontawesome5.min.css">
-  <link rel="stylesheet" href="/static/main.css?200101">
+  <link rel="stylesheet" href="/static/main.css?191226">
+  <style type="text/css">
+    body {
+      background-color: #282a29;
+      color: #fff;
+    }
+    .my-section h3 {
+      color: #d0c58f;
+    }
+    .texti-vital {
+      color: #f0558e;
+    }
+    table tr td {
+      color: #fff;
+      font-size: 1.4em;
+      font-family: Questrial;
+      text-align: justify;
+      text-justify: distribute-all-lines;
+      text-align-last: justify;
+      padding: 0;
+    }
+    td.tcenter {
+      text-align: center;
+      text-justify: none;
+      text-align-last: center;
+    }
+    table tr td i {
+      color: #d0c58f;
+    }
+    table tr td:nth-child(1) {
+      text-align: right;
+    }
+    table tr td:nth-child(2) {
+      width: 70vw;
+    }
+    table tr td:nth-child(3) {
+      width: 10vw;
+    }
+    table tr td:nth-child(4) {
+      text-align: right;
+      text-justify: none;
+      text-align-last: right;
+    }
+    table tr td div {
+      color: #d0c58f;
+      border: 1px solid #d0c58f;
+      width: 5em;
+      padding: 0 10px;
+    }
+    table tr td div.none {
+      color: transparent;
+      border: 1px solid transparent;
+      width: 5em;
+      padding: 0 10px;
+    }
+    table tr td div span.green,
+    table tr td div span.red {
+      border-radius: 40%;
+      color: #fff;
+      padding: 2px;
+    }
+    table tr td div span.green {
+      background: #458762;
+    }
+    table tr td div span.red {
+      background: #af2033;
+    }
+    .pstext {
+      color: #d0c58f;
+      font-size: 0.75em;
+      padding: 1em;
+    }
+    @media (max-width:767px) {
+        table tr td {
+          font-size: 0.9em;
+        }
+        #my-carousel {
+          margin-top: 36px;
+        }
+    }
+  </style>>
 </head>
 
 <body>
@@ -30,11 +110,17 @@
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#home-menu" aria-controls="home-menu" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="/mimashokudo"><img src="logo.png" class="img-logo"> <span>覓馬食堂</span></a>
+    <a class="navbar-brand" href="/mimashokudo"><img src="/img/logo.png" class="img-logo"> <span>覓馬食堂</span></a>
 
     <div class="collapse navbar-collapse" id="home-menu">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link" href="#contactus">聯絡我們</a></li>
+        <li class="nav-item"><a class="nav-link" href="#section01">丼飯</a></li>
+        <li class="nav-item"><a class="nav-link" href="#section02">蔬菜</a></li>
+        <li class="nav-item"><a class="nav-link" href="#section03">異國麵食</a></li>
+        <li class="nav-item"><a class="nav-link" href="#section04">缽物小食</a></li>
+        <li class="nav-item"><a class="nav-link" href="#section05">飲品</a></li>
+        <li class="nav-item"><a class="nav-link" href="#section06">甜點</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contactus">餐廳資訊</a></li>
       </ul>
     </div>
   </nav>
@@ -46,11 +132,11 @@
         <div class="slide-1">
           <div class="overlay"></div>
         </div>
-        <img class="first-slide" src="cover.jpg" alt="Cover">
+        <img class="first-slide" src="/img/cover.jpg" alt="Cover">
         <div class="container">
           <div class="carousel-caption">
             <h2>覓馬食堂</h2>
-            <h3>Kaohsiung Menus</h3>
+            <h3></h3>
           </div>
         </div>
       </div>
@@ -58,21 +144,159 @@
   </div>
 
   <div class="container">
-    <div class="section-id" id="aboutus"></div>
+    <div class="section-id" id="section01"></div>
     <div class="jumbotron jumbotron-section">
-      <h2><span>關於我們</span></h2>
+      <h2><span>丼飯</span></h2>
       <hr>
     </div>
     <section class="my-section">
+      <h3>牛肉</h3>
       <div class="row">
-          <div class="col-lg-6">
-            <img src="/img/aboutus.jpg" alt="About us" class="img-fluid">
-          </div>
-          <div class="col-lg-6">
-            <h3 class="texti-main">易取行動科技</h3>
-            <br>
-            <p>我們成立於 <span class="font-lg">2013</span> 年，公司位於高雄<span class="font-lg">85</span>大樓商務中心。我們的經營團隊成員具備企業管理、資訊科技、網路安全及社群行銷等專長與實務經驗</p>
-            <p>主要服務項目包括響應式形象網站設計、企業雲端資源規劃系統、商業服務平台開發營運、社群平台應用軟體開發等</p>
+          <table class="table">
+            <tbody>
+              <tr>
+                <td><i class="fas fa-thumbs-up invisible"></i></td>
+                <td>日式味噌牛筋蓋飯</td>
+                <td></td>
+                <td>180</td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-thumbs-up invisible"></i></td>
+                <td>美國五花牛燒肉丼</td>
+                <td></td>
+                <td>200</td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-thumbs-up"></i></td>
+                <td>舒菲58℃安格斯嫩肩牛排丼</td>
+                <td><div>4.5盎司</div></td>
+                <td>270</td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-thumbs-up invisible"></i></td>
+                <td>舒菲台塑風味帶骨牛小排醬燒丼</td>
+                <td><div>7盎司</div></td>
+                <td>280</td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-thumbs-up invisible"></i></td>
+                <td>58℃低溫舒菲安格斯紐約客丼</td>
+                <td><div>6盎司</div></td>
+                <td>350</td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-thumbs-up"></i></td>
+                <td>58℃舒菲澳洲和牛牛臀心定食</td>
+                <td><div>6盎司</div></td>
+                <td>799</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="pstext">● 加價 $99 可升級為定食　附風味小菜兩款、湯、飲料、甜點</div>
+      </div>
+
+      <hr>
+      <h3>海鮮</h3>
+      <div class="row">
+          <table class="table">
+            <tbody>
+              <tr>
+                <td><i class="fas fa-thumbs-up invisible"></i></td>
+                <td>乾煎義式風味鮮蝦卡滋丼</td>
+                <td><div class="none"></div></td>
+                <td>220</td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-thumbs-up invisible"></i></td>
+                <td>轟炸廣島大牡蠣卡滋丼</td>
+                <td></td>
+                <td>250</td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-thumbs-up"></i></td>
+                <td>香煎豪華海鮮總匯丼飯</td>
+                <td></td>
+                <td>300</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="pstext">● 加價 $99 可升級為定食　附風味小菜兩款、湯、飲料、甜點</div>
+      </div>
+
+      <hr>
+      <h3>豚肉．雞肉．鴨肉．羊肉</h3>
+      <div class="row">
+          <table class="table">
+            <tbody>
+              <tr>
+                <td><i class="fas fa-thumbs-up"></i></td>
+                <td>舒菲照燒雞腿燒丼</td>
+                <td></td>
+                <td>170</td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-thumbs-up invisible"></i></td>
+                <td>黯然消魂叉燒舒菲豚肉丼</td>
+                <td></td>
+                <td>180</td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-thumbs-up invisible"></i></td>
+                <td>和風卡滋厚重豬排丼</td>
+                <td></td>
+                <td>240</td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-thumbs-up"></i></td>
+                <td>椰香泰式咖哩舒菲嫩雞胸蓋飯</td>
+                <td class="tcenter"><div class="none"><span class="red">微</span><span class="red">辣</span></div></td>
+                <td>250</td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-thumbs-up invisible"></i></td>
+                <td>蔥香62℃舒菲櫻桃鴨胸丼飯</td>
+                <td></td>
+                <td>260</td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-thumbs-up invisible"></i></td>
+                <td>普羅旺斯香草小羔羊胸腹肉丼</td>
+                <td></td>
+                <td>270</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="pstext">● 加價 $99 可升級為定食　附風味小菜兩款、湯、飲料、甜點</div>
+      </div>
+
+      <hr>
+      <h3>蔬菜</h3>
+      <div class="row">
+          <table class="table">
+            <tbody>
+              <tr>
+                <td><i class="fas fa-thumbs-up invisible"></i></td>
+                <td>覓馬私房卡滋高麗菜丼(蛋奶素)</td>
+                <td><div class="none"></div></td>
+                <td>49</td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-thumbs-up invisible"></i></td>
+                <td>菌菇醬燒食蔬卡滋丼(蛋奶素)</td>
+                <td></td>
+                <td>160</td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-thumbs-up"></i></td>
+                <td>蔬食風味猴頭菇素排丼(蛋奶素)</td>
+                <td></td>
+                <td>230</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="pstext">
+            ● 如需全素，點餐時請告知服務人員，附例湯<br>
+            ● 加價 $99 可升級為定食　附風味小菜兩款、湯、飲料、甜點
           </div>
       </div>
     </section>
@@ -81,21 +305,27 @@
   <div class="container">
     <div class="section-id" id="contactus"></div>
     <div class="jumbotron jumbotron-section">
-      <h2><span>聯絡我們</span></h2>
+      <h2><span>餐廳資訊</span></h2>
       <hr>
     </div>
     <section class="my-section">
       <div class="row">
           <div class="col-lg-6">
-            <img src="/img/contactus.jpg" alt="Contact Us" class="img-fluid">
+            <img src="/img/space.jpg" alt="Contact Us" class="img-fluid">
           </div>
           <div class="col-lg-6">
-            <h3 class="texti-main">公司地址</h3>
-            <p>高雄市苓雅區自強三路<span class="font-lg">3</span>號<span class="font-lg">30</span>樓之<span class="font-lg">1</span><br>(位於高雄<span class="font-lg">85</span>大樓)</p>
+            <h3 class="texti-main">餐廳地址</h3>
+            <p>83053 高雄市鳳山區青年路二段462號2樓</p>
             <hr>
-            <h3 class="texti-main">聯絡表單</h3>
-            <p>想進一步瞭解我們的產品及服務，或是有任何寶貴意見，請填寫表單，留下您的聯絡資訊與意見，我們將竭誠為您服務</p>
-            <button class="btn btn-lg btn-success">聯絡表單</button>
+            <h3 class="texti-main">營業時間</h3>
+            <p>
+              午餐 11:30 - 14:30&nbsp;&nbsp;晚餐 17:30 - 21:30<br>
+              假日 11:00 - 14:30&nbsp;&nbsp;假日 17:00 - 21:30
+            </p>
+            <p class="texti-vital">週二店休</p>
+            <hr>
+            <h3 class="texti-main">訂位專線</h3>
+            <p>07 - 7776128</p>
           </div>
       </div>
     </section>
@@ -106,7 +336,7 @@
     <div class="container">
       <div class="copy-right text-center">
         <hr>
-        <p>&copy; 2020 易取行動科技</p>
+        <p>&copy; 2020 覓馬食堂</p>
       </div>      
     </div>
   </footer>
@@ -114,7 +344,7 @@
   <script src="/static/jquery.min.js"></script>
   <script src="/static/bootstrap.min.js"></script>
   <script src="/static/jquery.touchSwipe.min.js"></script>
-  <script src="/static/mainsub.js?200101"></script>
+  <script src="/static/mainsub.js?191226"></script>
   
 </body>
 </html>

@@ -25,6 +25,11 @@
       background-color: #282a29;
       color: #fff;
     }
+    a.facebook:link, a.facebook:visited, a.facebook:hover,
+    a.facebook:active {
+      color: #4267b2;
+      text-decoration: none;
+    }
     a:link, a:visited, a:hover,
     a:active {
       color: #3798da;
@@ -90,17 +95,25 @@
       width: 4.8em;
       padding: 0 10px;
     }
+    table tr td div span.red,
     table tr td div span.green,
-    table tr td div span.red {
+    table tr td div span.blue,
+    table tr td div span.khaki {
       border-radius: 40%;
       color: #fff;
       padding: 2px;
     }
-    table tr td div span.green {
-      background: #458762;
-    }
     table tr td div span.red {
       background: #af2033;
+    }
+    table tr td div span.green {
+      background: #4a8745;
+    }
+    table tr td div span.blue {
+      background: #2f899a;
+    }
+    table tr td div span.khaki {
+      background: #b6a44a;
     }
     ul.pstext {
       color: #d0c58f;
@@ -120,6 +133,8 @@
 </head>
 
 <body>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v5.0"></script>
   <div id="preloader">
     <div id="status">&nbsp;</div>
   </div>
@@ -129,6 +144,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <a class="navbar-brand" href="/mimashokudo"><img src="/img/logo.png" class="img-logo"> <span>覓馬食堂</span></a>
+    <a class="facebook" href="https://www.facebook.com/mimashokudo/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
 
     <div class="collapse navbar-collapse" id="home-menu">
       <ul class="navbar-nav ml-auto">
@@ -291,6 +307,12 @@
           </ul>
       </div>
 
+    <div class="section-id" id="section02"></div>
+    <div class="jumbotron jumbotron-section">
+      <h2><span>蔬菜</span></h2>
+      <hr>
+    </div>
+    <section class="my-section">
       <h3><span>蔬菜</span></h3>
       <div class="row">
           <table class="table">
@@ -321,6 +343,222 @@
           </ul>
       </div>
     </section>
+
+    <div class="section-id" id="section03"></div>
+    <div class="jumbotron jumbotron-section">
+      <h2><span>異國麵食</span></h2>
+      <hr>
+    </div>
+    <section class="my-section">
+      <h3><span>異國風味新麵食</span></h3>
+      <div class="row">
+          <table class="table">
+            <tbody>
+              <tr>
+                <td><i class="fas fa-thumbs-up invisible"></i></td>
+                <td>蕃茄牛蒡時蔬天使髮絲湯麵</td>
+                <td class="tcenter"><div class="none"><span class="green">素</span></div></td>
+                <td>260</td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-thumbs-up"></i></td>
+                <td>新加坡叻沙海鮮湯麵</td>
+                <td class="tcenter"><div class="none"><span class="red">微</span><span class="red">辣</span></div></td>
+                <td>300</td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-thumbs-up"></i></td>
+                <td>當歸風味sous vide櫻桃鴨腿髮絲湯麵</td>
+                <td></td>
+                <td>320</td>
+              </tr>
+            </tbody>
+          </table>
+          <ul class="pstext">
+            <li>加價 $69 可升級為定食，附風味小菜兩款、飲料、甜點</li>
+          </ul>
+      </div>
+    </section>
+
+    <div class="section-id" id="section04"></div>
+    <div class="jumbotron jumbotron-section">
+      <h2><span>缽物小食</span></h2>
+      <hr>
+    </div>
+    <section class="my-section">
+      <h3><span>缽物小食</span></h3>
+      <div class="row">
+          <table class="table">
+            <tbody>
+              <tr>
+                <td><i class="fas fa-thumbs-up invisible"></i></td>
+                <td>62℃舒肥低溫蛋</td>
+                <td></td>
+                <td>39</td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-thumbs-up invisible"></i></td>
+                <td>梅漬小蕃茄</td>
+                <td></td>
+                <td>39</td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-thumbs-up invisible"></i></td>
+                <td>覓馬手工黃金泡菜</td>
+                <td></td>
+                <td>59</td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-thumbs-up invisible"></i></td>
+                <td>日式風味田園沙拉</td>
+                <td></td>
+                <td>69</td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-thumbs-up invisible"></i></td>
+                <td>咖哩可樂餅</td>
+                <td></td>
+                <td>99</td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-thumbs-up invisible"></i></td>
+                <td>脆皮雙味薯條</td>
+                <td></td>
+                <td>99</td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-thumbs-up invisible"></i></td>
+                <td>肯瓊香酥雞翅腿</td>
+                <td></td>
+                <td>149</td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-thumbs-up invisible"></i></td>
+                <td>風味綜合炸拼盤</td>
+                <td></td>
+                <td>189</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+    </section>
+
+    <div class="section-id" id="section05"></div>
+    <div class="jumbotron jumbotron-section">
+      <h2><span>飲品</span></h2>
+      <hr>
+    </div>
+    <section class="my-section">
+      <h3><span>飲品</span></h3>
+      <div class="row">
+          <table class="table">
+            <tbody>
+              <tr>
+                <td><i class="fas fa-thumbs-up invisible"></i></td>
+                <td>阿薩姆紅茶</td>
+                <td class="tcenter"><div class="none"><span class="blue">冰</span></div></td>
+                <td>60</td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-thumbs-up invisible"></i></td>
+                <td>四季春茶</td>
+                <td class="tcenter"><div class="none"><span class="blue">冰</span></div></td>
+                <td>60</td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-thumbs-up invisible"></i></td>
+                <td>新鮮檸檬汁</td>
+                <td class="tcenter"><div class="none"><span class="blue">冰</span></div></td>
+                <td>60</td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-thumbs-up invisible"></i></td>
+                <td>阿薩姆鮮奶茶</td>
+                <td class="tcenter"><div class="none"><span class="blue">冰</span>&nbsp;&nbsp;<span class="red">熱</span></div></td>
+                <td>90</td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-thumbs-up invisible"></i></td>
+                <td>古早味酸梅湯</td>
+                <td class="tcenter"><div class="none"><span class="blue">冰</span>&nbsp;&nbsp;<span class="khaki">杯</span></div></td>
+                <td>70</td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-thumbs-up invisible"></i></td>
+                <td>古早味酸梅湯</td>
+                <td class="tcenter"><div class="none"><span class="blue">冰</span>&nbsp;&nbsp;<span class="khaki">壺</span></div></td>
+                <td>150</td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-thumbs-up invisible"></i></td>
+                <td>美式咖啡</td>
+                <td class="tcenter"><div class="none"><span class="blue">冰</span>&nbsp;&nbsp;<span class="red">熱</span></div></td>
+                <td>70</td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-thumbs-up invisible"></i></td>
+                <td>拿鐵咖啡</td>
+                <td class="tcenter"><div class="none"><span class="blue">冰</span>&nbsp;&nbsp;<span class="red">熱</span></div></td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-thumbs-up"></i></td>
+                <td>熊貓冰磚咖啡</td>
+                <td class="tcenter"><div class="none"><span class="blue">冰</span></div></td>
+                <td>120</td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-thumbs-up invisible"></i></td>
+                <td>覓馬招牌氣泡咖啡</td>
+                <td class="tcenter"><div class="none"><span class="blue">冰</span></div></td>
+                <td>120</td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-thumbs-up invisible"></i></td>
+                <td>海尼根(650ml)</td>
+                <td></td>
+                <td>140</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+    </section>
+
+    <div class="section-id" id="section06"></div>
+    <div class="jumbotron jumbotron-section">
+      <h2><span>甜點</span></h2>
+      <hr>
+    </div>
+    <section class="my-section">
+      <h3><span>甜點</span></h3>
+      <div class="row">
+          <table class="table">
+            <tbody>
+              <tr>
+                <td><i class="fas fa-thumbs-up invisible"></i></td>
+                <td>焦糖烤布蒥</td>
+                <td></td>
+                <td>60</td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-thumbs-up invisible"></i></td>
+                <td>黑糖紅豆豆漿奶酪</td>
+                <td></td>
+                <td>60</td>
+              </tr>
+              <tr>
+                <td><i class="fas fa-thumbs-up"></i></td>
+                <td>西西里乳酪捲</td>
+                <td class="tright"><div>兩捲/份</div></td>
+                <td>80</td>
+              </tr>
+            </tbody>
+          </table>
+          <ul class="pstext">
+            <li>加價 $99 可升級為定食，附風味小菜兩款、湯、飲料、甜點</li>
+          </ul>
+      </div>
+    </section>
   </div>
 
   <div class="container">
@@ -331,9 +569,6 @@
     </div>
     <section class="my-section">
       <div class="row">
-          <div class="col-lg-6">
-            <img src="/img/space.jpg" alt="Contact Us" class="img-fluid">
-          </div>
           <div class="col-lg-6">
             <h3 class="texti-main">餐廳地址</h3>
             <p>83053 高雄市鳳山區青年路二段462號2樓</p>
@@ -348,6 +583,11 @@
             <br>
             <h3 class="texti-main">訂位專線</h3>
             <p><i class="fas fa-phone-volume"></i> <a href="tel:077776128">07-7776128</a></p>
+            <br>
+          </div>
+          <div class="col-lg-6">
+            <!-- <img src="/img/space.jpg" alt="Contact Us" class="img-fluid"> -->
+            <div class="fb-page" data-href="https://www.facebook.com/mimashokudo/" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/mimashokudo/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/mimashokudo/">覓馬食堂</a></blockquote></div>
           </div>
       </div>
     </section>

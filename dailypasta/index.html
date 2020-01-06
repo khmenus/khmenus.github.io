@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1, maximum-scale=1">
+  <meta name="description" content="朵莉義大利麵屋">
+  <meta name="author" content="EachMobi">
+  <meta property="og:site_name" content="朵莉義大利麵屋">
+  <meta property="og:url" content="https://khmenus.tw/dailypasta">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="朵莉義大利麵屋">
+  <meta property="og:description" content="朵莉義大利麵屋">
+  <meta property="og:image" content="https://khmenus.tw/img/cover.png">
+
+  <title>朵莉義大利麵屋</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Quicksand'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/fontawesome5.min.css">
+  <link rel="stylesheet" href="/static/main.css?191226">
+  <link rel="canonical" href="https://khmenus.tw/dailypasta">
+  <style type="text/css">
+    body {
+      background-color: #e3d9b6;
+      color: #5c4842;
+    }
+    a.facebook:link, a.facebook:visited, a.facebook:hover,
+    a.facebook:active {
+      color: #4267b2;
+      text-decoration: none;
+    }
+    a:link, a:visited, a:hover,
+    a:active {
+      color: #3798da;
+      text-decoration: none;
+    }
+    a:hover,
+    a:active {
+      color: #56ace6;
+    }
+    .jumbotron-section h2 span {
+        border-radius: 0 10px 0 0;
+    }
+    .jumbotron-section h2 span.branch {
+        border-radius: 0;
+        background-color: #443605;
+    }
+    .my-section h3 {
+      color: #363636;
+    }
+    .my-section h3 span {
+      border-bottom: solid 6px #bf4747;
+      border-radius: 5px;
+    }
+    .texti-vital {
+      color: #d06868;
+    }
+    .fa-thumbs-up {
+        color: #4267b2;
+    }
+    table tr td {
+      color: #5c4842;
+      font-size: 1.5em;
+      font-family: Questrial;
+      padding: 0;
+      text-align: justify;
+      text-align-last: justify;
+    }
+    td.tcenter {
+      text-align: center;
+      text-align-last: center;
+    }
+    td.tright {
+      text-align: right;
+      text-align-last: right;
+    }
+    td.tred {
+        color: #ab2023;
+    }
+    table tr td i {
+      color: #d0c58f;
+    }
+    table tr td:nth-child(1) {
+      text-align: right;
+    }
+    table tr td:nth-child(2) {
+      width: 70vw;
+    }
+    table tr td:nth-child(3) {
+      width: 10vw;
+    }
+    table tr td:nth-child(4) {
+      text-align: right;
+      text-justify: none;
+      text-align-last: right;
+    }
+    table tr td div {
+      color: #d0c58f;
+      border: 1px solid #d0c58f;
+      width: 5em;
+      padding: 0 10px;
+    }
+    table tr td div.none {
+      color: transparent;
+      border: 1px solid transparent;
+      width: 4.8em;
+      padding: 0 10px;
+    }
+    table tr td div span.black,
+    table tr td div span.red,
+    table tr td div span.green,
+    table tr td div span.blue,
+    table tr td div span.khaki {
+      border-radius: 40%;
+      color: #fff;
+      padding: 2px;
+    }
+    table tr td div span.black {
+      background: #363636;
+    }
+    table tr td div span.red {
+      background: #af2033;
+    }
+    table tr td div span.green {
+      background: #4a8745;
+    }
+    table tr td div span.blue {
+      background: #2f899a;
+    }
+    table tr td div span.khaki {
+      background: #b6a44a;
+    }
+    .rules {
+      background-color: #9c8222; 
+      text-align: left; 
+      color: #f8f3df;
+      font-weight: normal;
+      font-size: 1.1em;
+      padding: 20px 20px 10px;
+      border-radius: 5px;
+    }
+    ul.pstext {
+      color: #363636;
+      padding: 3em;
+    }
+    ul.pstext li {
+      font-size: 1.2em;
+    }
+    ul.pstext li.carh span,
+    ul.pstext li.plus span,
+    ul.pstext li.aset span {
+        color: #fff;
+        padding: 2px;
+        border-radius: 3px;
+    }
+    ul.pstext li.carh span {
+        background-color: #5c5b16;
+    }
+    ul.pstext li.plus span {
+        background-color: #da354e;
+    }
+    ul.pstext li.aset span {
+        background-color: #4e6591;
+    }
+    @media (max-width:767px) {
+        table tr td {
+          font-size: 1.2em;
+          text-align: left;
+          text-align-last: left;
+        }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v5.0"></script>
+  <div id="preloader">
+    <div id="status">&nbsp;</div>
+  </div>
+  
+  <nav class="navbar navbar-expand-md fixed-top navbar-main">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#home-menu" aria-controls="home-menu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/dailypasta"><img src="/img/logo.png" class="img-logo"> <span>朵莉義大利麵屋</span></a>
+
+    <div class="collapse navbar-collapse" id="home-menu">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#section01">蕃茄紅醬</a></li>
+        <li class="nav-item"><a class="nav-link" href="#section02">奶油白醬</a></li>
+        <li class="nav-item"><a class="nav-link" href="#section03">香草青醬</a></li>
+        <li class="nav-item"><a class="nav-link" href="#section04">素食主義</a></li>
+        <li class="nav-item"><a class="nav-link" href="#section05">異國風味</a></li>
+        <li class="nav-item"><a class="nav-link" href="#section06">手拍Pizza</a></li>
+        <li class="nav-item"><a class="nav-link" href="#section07">開胃小點</a></li>
+        <li class="nav-item"><a class="nav-link" href="#section08">飲料</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contactjg">建工店</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contactzy">自由店</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <h1 class="d-none">朵莉義大利麵屋</h1>
+  <div id="my-carousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="slide-1">
+          <div class="overlay"></div>
+        </div>
+        <img class="first-slide" src="/img/cover.jpg" alt="Cover">
+        <div class="container">
+          <div class="carousel-caption">
+            <h2>朵莉義大利麵屋</h2>
+            <h3></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section-id" id="section00"></div>
+    <div class="jumbotron jumbotron-section">
+      <h2><span class="branch">用餐提醒</span></h2>
+      <hr>
+      <div class="rules">
+          <ul>
+              <li>不酌收服務費，店內用餐每人低消40元<br><small>(6歲以下兒童不在此限)</small></li>
+              <li>本店產品皆為現場調製，所需費時，感謝耐心等候</li>
+              <li>本店採自助式點餐，請自行至櫃檯點餐並結帳</li>
+              <li>外帶外送餐點20份以上，請於前一日預訂</li>
+              <li>餐點加大免費<small>(不包含焗烤)</small></li>
+              <li>外帶外送餐點皆附濃湯1份</li>
+              <li>訂餐滿300元提供外送服務</li>
+          </ul>
+      </div>
+    </div>
+    <section class="my-section">
+    </section>
+
+    <div class="section-id" id="section01"></div>
+    <div class="jumbotron jumbotron-section">
+      <h2><span style="background-color: #ce1623;">蕃茄紅醬</span></h2>
+      <hr>
+    </div>
+    <section class="my-section">
+      <div class="row">
+          <table class="table">
+            <tbody>
+              <tr>
+                <td><i class="far fa-thumbs-up invisible"></i></td>
+                <td>蕃茄煙燻香腸義麵</td>
+                <td></td>
+                <td>85</td>
+              </tr>
+              <tr>
+                <td><i class="far fa-thumbs-up invisible"></i></td>
+                <td>經典肉醬義麵</td>
+                <td class="tcenter"><div class="none"><span class="black">澳</span><span class="black">牛</span></div></td>
+                <td>90</td>
+              </tr>
+              <tr>
+                <td><i class="far fa-thumbs-up invisible"></i></td>
+                <td class="tred">辣味蕃茄培根義麵</td>
+                <td class="tcenter"><div class="none"><span class="red">辣</span></div></td>
+                <td>90</td>
+              </tr>
+              <tr>
+                <td><i class="far fa-thumbs-up invisible"></i></td>
+                <td>蕃茄香菇燻雞義麵</td>
+                <td></td>
+                <td>95</td>
+              </tr>
+              <tr>
+                <td><i class="far fa-thumbs-up"></i></td>
+                <td>粉紅醬雞肉義麵</td>
+                <td></td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <td><i class="far fa-thumbs-up invisible"></i></td>
+                <td>蕃茄炸雞義麵</td>
+                <td></td>
+                <td>110</td>
+              </tr>
+              <tr>
+                <td><i class="far fa-thumbs-up"></i></td>
+                <td>蕃茄海鮮義麵</td>
+                <td></td>
+                <td>125</td>
+              </tr>
+            </tbody>
+          </table>
+          <ul class="pstext">
+            <li class="carh">
+                麵飯可選 <small>(份量可加大)</small><br>
+                <span>直麵</span> <span>筆尖麵</span> <span>燉飯</span><br>
+                <span>+30 焗飯</span> <span>+30 焗麵</span>
+            </li>
+            <li class="plus">加價點 <small>(點餐請告知櫃台)</small><br>
+                <span>+20 加培根/燻雞肉/煙燻香腸/蔬菜</span><br> 
+                <span>+30 加雞肉/蛤蠣</span><br> 
+                <span>+40 加炸雞</span><br>
+                <span>+45 加海鮮</span> 
+            </li>
+            <li class="aset">超值套餐 <small>(需搭配主餐。僅限內用)</small><br>
+                <span>+40 沙拉&麵包(2片)</span><br> 
+                <span>+60 含30元飲品&沙拉&麵包(2片)</span><br> 
+                <small>※套餐飲料超過30元，需補差價※</small>
+            </li>
+          </ul>
+      </div>
+    </section>
+
+    <div class="section-id" id="section02"></div>
+    <div class="jumbotron jumbotron-section">
+      <h2><span style="background-color: #e3bb2a;">奶油白醬</span></h2>
+      <hr>
+    </div>
+    <section class="my-section">
+      <div class="row">
+          <table class="table">
+            <tbody>
+              <tr>
+                <td><i class="far fa-thumbs-up invisible"></i></td>
+                <td>奶油培根玉米義麵</td>
+                <td></td>
+                <td>90</td>
+              </tr>
+              <tr>
+                <td><i class="far fa-thumbs-up invisible"></i></td>
+                <td>奶油燻雞肉義麵</td>
+                <td></td>
+                <td>95</td>
+              </tr>
+              <tr>
+                <td><i class="far fa-thumbs-up invisible"></i></td>
+                <td class="tred">香辣奶油蛤蠣義麵</td>
+                <td class="tcenter"><div class="none"><span class="red">辣</span></div></td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <td><i class="far fa-thumbs-up invisible"></i></td>
+                <td class="tred">香辣奶油雞肉義麵</td>
+                <td class="tcenter"><div class="none"><span class="red">辣</span></div></td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <td><i class="far fa-thumbs-up"></i></td>
+                <td>奶油炸雞義麵</td>
+                <td></td>
+                <td>110</td>
+              </tr>
+              <tr>
+                <td><i class="far fa-thumbs-up invisible"></i></td>
+                <td>奶油海鮮義麵</td>
+                <td></td>
+                <td>125</td>
+              </tr>
+            </tbody>
+          </table>
+          <ul class="pstext">
+            <li class="carh">
+                麵飯可選 <small>(份量可加大)</small><br>
+                <span>直麵</span> <span>筆尖麵</span> <span>燉飯</span><br>
+                <span>+30 焗飯</span> <span>+30 焗麵</span>
+            </li>
+            <li class="plus">加價點 <small>(點餐請告知櫃台)</small><br>
+                <span>+20 加培根/燻雞肉/煙燻香腸/蔬菜</span><br> 
+                <span>+30 加雞肉/蛤蠣</span><br> 
+                <span>+40 加炸雞</span><br>
+                <span>+45 加海鮮</span> 
+            </li>
+            <li class="aset">超值套餐 <small>(需搭配主餐。僅限內用)</small><br>
+                <span>+40 沙拉&麵包(2片)</span><br> 
+                <span>+60 含30元飲品&沙拉&麵包(2片)</span><br> 
+                <small>※套餐飲料超過30元，需補差價※</small>
+            </li>
+          </ul>
+      </div>
+    </section>
+
+    <div class="section-id" id="section03"></div>
+    <div class="jumbotron jumbotron-section">
+      <h2><span style="background-color: #70a619;">香草青醬</span></h2>
+      <hr>
+    </div>
+    <section class="my-section">
+      <div class="row">
+          <table class="table">
+            <tbody>
+              <tr>
+                <td><i class="far fa-thumbs-up invisible"></i></td>
+                <td>香草青醬鮮蔬義麵</td>
+                <td></td>
+                <td>95</td>
+              </tr>
+              <tr>
+                <td><i class="far fa-thumbs-up invisible"></i></td>
+                <td>青醬雞肉義麵</td>
+                <td></td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <td><i class="far fa-thumbs-up invisible"></i></td>
+                <td>青醬炸雞義麵</td>
+                <td></td>
+                <td>110</td>
+              </tr>
+              <tr>
+                <td><i class="far fa-thumbs-up"></i></td>
+                <td>青醬海鮮義麵</td>
+                <td></td>
+                <td>125</td>
+              </tr>
+            </tbody>
+          </table>
+          <ul class="pstext">
+            <li class="carh">
+                麵飯可選 <small>(份量可加大)</small><br>
+                <span>直麵</span> <span>筆尖麵</span> <span>燉飯</span><br>
+                <span>+30 焗飯</span> <span>+30 焗麵</span>
+            </li>
+            <li class="plus">加價點 <small>(點餐請告知櫃台)</small><br>
+                <span>+20 加培根/燻雞肉/煙燻香腸/蔬菜</span><br> 
+                <span>+30 加雞肉/蛤蠣</span><br> 
+                <span>+40 加炸雞</span><br>
+                <span>+45 加海鮮</span> 
+            </li>
+            <li class="aset">超值套餐 <small>(需搭配主餐。僅限內用)</small><br>
+                <span>+40 沙拉&麵包(2片)</span><br> 
+                <span>+60 含30元飲品&沙拉&麵包(2片)</span><br> 
+                <small>※套餐飲料超過30元，需補差價※</small>
+            </li>
+          </ul>
+      </div>
+    </section>
+    
+    <div class="section-id" id="section04"></div>
+    <div class="jumbotron jumbotron-section">
+      <h2><span style="background-color: #38964c;">素食主義</span></h2>
+      <hr>
+    </div>
+    <section class="my-section">
+      <div class="row">
+          <table class="table">
+            <tbody>
+              <tr>
+                <td><i class="far fa-thumbs-up invisible"></i></td>
+                <td>咖哩鮮蔬義麵</td>
+                <td></td>
+                <td>95</td>
+              </tr>
+              <tr>
+                <td><i class="far fa-thumbs-up invisible"></i></td>
+                <td>奶醬鮮蔬義麵</td>
+                <td></td>
+                <td>105</td>
+              </tr>
+            </tbody>
+          </table>
+          <ul class="pstext">
+            <li class="carh">
+                麵飯可選 <small>(份量可加大)</small><br>
+                <span>直麵</span> <span>筆尖麵</span> <span>燉飯</span><br>
+                <span>+30 焗飯</span> <span>+30 焗麵</span>
+            </li>
+            <li class="plus">加價點 <small>(點餐請告知櫃台)</small><br>
+                <span>+20 加培根/燻雞肉/煙燻香腸/蔬菜</span><br> 
+                <span>+30 加雞肉/蛤蠣</span><br> 
+                <span>+40 加炸雞</span><br>
+                <span>+45 加海鮮</span> 
+            </li>
+            <li class="aset">超值套餐 <small>(需搭配主餐。僅限內用)</small><br>
+                <span>+40 沙拉&麵包(2片)</span><br> 
+                <span>+60 含30元飲品&沙拉&麵包(2片)</span><br> 
+                <small>※套餐飲料超過30元，需補差價※</small>
+            </li>
+          </ul>
+      </div>
+    </section>
+
+    <div class="section-id" id="section05"></div>
+    <div class="jumbotron jumbotron-section">
+      <h2><span style="background-color: #7d3a1b;">異國風味</span></h2>
+      <hr>
+    </div>
+    <section class="my-section">
+      <div class="row">
+          <table class="table">
+            <tbody>
+              <tr>
+                <td><i class="far fa-thumbs-up invisible"></i></td>
+                <td>日式咖哩雞肉義麵</td>
+                <td></td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <td><i class="far fa-thumbs-up invisible"></i></td>
+                <td>蒜香白酒蛤蠣義麵</td>
+                <td></td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <td><i class="far fa-thumbs-up invisible"></i></td>
+                <td>綠咖哩雞肉義麵</td>
+                <td></td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <td><i class="far fa-thumbs-up invisible"></i></td>
+                <td class="tred">墨西哥培根香腸義麵</td>
+                <td class="tcenter"><div class="none"><span class="red">辣</span></div></td>
+                <td>120</td>
+              </tr>
+              <tr>
+                <td><i class="far fa-thumbs-up invisible"></i></td>
+                <td class="tred">墨西哥炸雞義麵</td>
+                <td class="tcenter"><div class="none"><span class="red">辣</span></div></td>
+                <td>120</td>
+              </tr>
+              <tr>
+                <td><i class="far fa-thumbs-up invisible"></i></td>
+                <td class="tred">泰式風味雞肉義麵</td>
+                <td class="tcenter"><div class="none"><span class="red">辣</span></div></td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <td><i class="far fa-thumbs-up invisible"></i></td>
+                <td class="tred">泰式風味海鮮義麵</td>
+                <td class="tcenter"><div class="none"><span class="red">辣</span></div></td>
+                <td>125</td>
+              </tr>
+              <tr>
+                <td><i class="far fa-thumbs-up invisible"></i></td>
+                <td>墨魚汁培根蛤蠣義麵</td>
+                <td class="tcenter"><div class="none"><span class="black">純</span><span class="black">墨</span><span class="black">汁</span></div></td>
+                <td>150</td>
+              </tr>
+              <tr>
+                <td><i class="far fa-thumbs-up invisible"></i></td>
+                <td>墨魚汁海鮮義麵</td>
+                <td class="tcenter"><div class="none"><span class="black">純</span><span class="black">墨</span><span class="black">汁</span></div></td>
+                <td>150</td>
+              </tr>
+            </tbody>
+          </table>
+          <ul class="pstext">
+            <li class="carh">
+                麵飯可選 <small>(份量可加大)</small><br>
+                <span>直麵</span> <span>筆尖麵</span> <span>燉飯</span><br>
+                <span>+30 焗飯</span> <span>+30 焗麵</span><br>
+                蒜香白酒蛤蠣義麵限選 <span>直麵</span>
+            </li>
+            <li class="plus">加價點 <small>(點餐請告知櫃台)</small><br>
+                <span>+20 加培根/燻雞肉/煙燻香腸/蔬菜</span><br> 
+                <span>+30 加雞肉/蛤蠣</span><br> 
+                <span>+40 加炸雞</span><br>
+                <span>+45 加海鮮</span> 
+            </li>
+            <li class="aset">超值套餐 <small>(需搭配主餐。僅限內用)</small><br>
+                <span>+40 沙拉&麵包(2片)</span><br> 
+                <span>+60 含30元飲品&沙拉&麵包(2片)</span><br> 
+                <small>※套餐飲料超過30元，需補差價※</small>
+            </li>
+          </ul>
+      </div>
+    </section>
+
+    <div class="section-id" id="section06"></div>
+    <div class="jumbotron jumbotron-section">
+      <h2><span style="background-color: #574447;">手拍6吋Pizza</span></h2>
+      <hr>
+    </div>
+    <section class="my-section">
+      <div class="row">
+          <table class="table">
+            <tbody>
+              <tr>
+                <td><i class="far fa-thumbs-up invisible"></i></td>
+                <td>煙燻雞肉Pizza</td>
+                <td></td>
+                <td>80</td>
+              </tr>
+              <tr>
+                <td><i class="far fa-thumbs-up invisible"></i></td>
+                <td>香烤牛肉Pizza</td>
+                <td class="tcenter"><div class="none"><span class="black">澳</span><span class="black">牛</span></div></td>
+                <td>80</td>
+              </tr>
+              <tr>
+                <td><i class="far fa-thumbs-up invisible"></i></td>
+                <td>煙燻雞肉Pizza</td>
+                <td></td>
+                <td>80</td>
+              </tr>
+              <tr>
+                <td><i class="far fa-thumbs-up invisible"></i></td>
+                <td>德式香腸Pizza</td>
+                <td></td>
+                <td>80</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+    </section>
+
+    <div class="section-id" id="section07"></div>
+    <div class="jumbotron jumbotron-section">
+      <h2><span style="background-color: #ef910c;">開胃小點</span></h2>
+      <hr>
+    </div>
+    <section class="my-section">
+      <div class="row">
+          <table class="table">
+            <tbody>
+              <tr>
+                <td><i class="far fa-thumbs-up invisible"></i></td>
+                <td>朵莉炸物拼盤</td>
+                <td></td>
+                <td>80</td>
+              </tr>
+              <tr>
+                <td><i class="far fa-thumbs-up invisible"></i></td>
+                <td>BBQ烤雞</td>
+                <td></td>
+                <td>75</td>
+              </tr>
+              <tr>
+                <td><i class="far fa-thumbs-up invisible"></i></td>
+                <td>義式炸雞塊</td>
+                <td></td>
+                <td>60</td>
+              </tr>
+              <tr>
+                <td><i class="far fa-thumbs-up invisible"></i></td>
+                <td>金黃脆薯條</td>
+                <td></td>
+                <td>45</td>
+              </tr>
+              <tr>
+                <td><i class="far fa-thumbs-up invisible"></i></td>
+                <td>鮮蔬沙拉</td>
+                <td></td>
+                <td>30</td>
+              </tr>
+              <tr>
+                <td><i class="far fa-thumbs-up invisible"></i></td>
+                <td>大蒜麵包(4片)</td>
+                <td></td>
+                <td>30</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+    </section>
+
+    <div class="section-id" id="section08"></div>
+    <div class="jumbotron jumbotron-section">
+      <h2><span style="background-color: #5d8816;">飲品</span></h2>
+      <br>
+      <p class="lead texti-vital">※飲品均不提供外帶※</p>
+      <hr>
+    </div>
+    <section class="my-section">
+      <div class="row">
+          <table class="table">
+            <tbody>
+              <tr>
+                <td><i class="far fa-thumbs-up invisible"></i></td>
+                <td>咖啡拿鐵<small>(無糖)</small></td>
+                <td class="tcenter"><div class="none"><span class="blue">冰</span>&nbsp;&nbsp;<span class="red">熱</span></div></td>
+                <td>50</td>
+              </tr>
+              <tr>
+                <td><i class="far fa-thumbs-up invisible"></i></td>
+                <td>黑咖啡<small>(無糖)</small></td>
+                <td class="tcenter"><div class="none"><span class="blue">冰</span>&nbsp;&nbsp;<span class="red">熱</span></div></td>
+                <td>40</td>
+              </tr>
+              <tr>
+                <td><i class="far fa-thumbs-up invisible"></i></td>
+                <td>紅茶拿鐵</td>
+                <td class="tcenter"><div class="none"><span class="blue">冰</span>&nbsp;&nbsp;<span class="red">熱</span></div></td>
+                <td>40</td>
+              </tr>
+              <tr>
+                <td><i class="far fa-thumbs-up invisible"></i></td>
+                <td>檸檬紅茶</td>
+                <td class="tcenter"><div class="none"><span class="blue">冰</span></div></td>
+                <td>40</td>
+              </tr>
+              <tr>
+                <td><i class="far fa-thumbs-up invisible"></i></td>
+                <td>可口可樂</td>
+                <td class="tcenter"><div class="none"><span class="blue">冰</span></div></td>
+                <td>40</td>
+              </tr>
+              <tr>
+                <td><i class="far fa-thumbs-up invisible"></i></td>
+                <td>美粒果柳橙汁</td>
+                <td class="tcenter"><div class="none"><span class="blue">冰</span></div></td>
+                <td>40</td>
+              </tr>
+              <tr>
+                <td><i class="far fa-thumbs-up invisible"></i></td>
+                <td>古早味紅茶</td>
+                <td class="tcenter"><div class="none"><span class="blue">冰</span>&nbsp;&nbsp;<span class="red">熱</span></div></td>
+                <td>30</td>
+              </tr>
+              <tr>
+                <td><i class="far fa-thumbs-up invisible"></i></td>
+                <td>鮮釀綠茶<small>(無糖)</small></td>
+                <td class="tcenter"><div class="none"><span class="blue">冰</span>&nbsp;&nbsp;<span class="red">熱</span></div></td>
+                <td>30</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+    </section>
+  </div>
+
+  <div class="container">
+    <div class="section-id" id="contactjg"></div>
+    <div class="jumbotron jumbotron-section">
+      <h2><span class="branch">建工店</span></h2>
+      <hr>
+    </div>
+    <section class="my-section">
+      <div class="row">
+          <div class="col-lg-6">
+            <h3 class="texti-main">餐廳地址</h3>
+            <p>807 高雄市三民區建工路379號</p>
+            <p><i class="fas fa-map-marked-alt"></i> <a href="https://www.google.com/maps/place/807高雄市三民區建工路379號/@22.6525026,120.3280386,19z" target="_blank">打開地圖</a></p>
+            <br>
+            <h3 class="texti-main">訂位專線</h3>
+            <p><i class="fas fa-phone-volume"></i> <a href="tel:073986451">07-3986451</a></p>
+            <br>
+          </div>
+          <div class="col-lg-6">
+            <!-- <img src="/img/space.jpg" alt="Contact Us" class="img-fluid"> -->
+            <div class="fb-page" data-href="https://www.facebook.com/朵莉義大利麵屋-建工店-213021418720334" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/朵莉義大利麵屋-建工店-213021418720334" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/朵莉義大利麵屋-建工店-213021418720334">朵莉義大利麵屋</a></blockquote></div>
+          </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="container">
+    <div class="section-id" id="contactzy"></div>
+    <div class="jumbotron jumbotron-section">
+      <h2><span class="branch">自由店</span></h2>
+      <hr>
+    </div>
+    <section class="my-section">
+      <div class="row">
+          <div class="col-lg-6">
+            <h3 class="texti-main">餐廳地址</h3>
+            <p>807 高雄市三民區自由一路70號</p>
+            <p><i class="fas fa-map-marked-alt"></i> <a href="https://www.google.com/maps/place/807高雄市三民區自由一路70號/@22.644114,120.3066603,19z" target="_blank">打開地圖</a></p>
+            <br>
+            <h3 class="texti-main">訂位專線</h3>
+            <p><i class="fas fa-phone-volume"></i> <a href="tel:073223577">07-3223577</a></p>
+            <br>
+          </div>
+          <div class="col-lg-6">
+            <!-- <img src="/img/space.jpg" alt="Contact Us" class="img-fluid"> -->
+            <div class="fb-page" data-href="https://www.facebook.com/朵莉義大利麵屋-自由店-569792429825643/" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/朵莉義大利麵屋-自由店-569792429825643/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/朵莉義大利麵屋-自由店-569792429825643/">朵莉義大利麵屋</a></blockquote></div>
+          </div>
+      </div>
+    </section>
+  </div>
+
+  <br>
+  <footer>
+    <div class="container">
+      <div class="copy-right text-center">
+        <hr>
+        <p>&copy; 2020 朵莉義大利麵屋</p>
+      </div>      
+    </div>
+  </footer>
+
+  <script src="/static/jquery.min.js"></script>
+  <script src="/static/bootstrap.min.js"></script>
+  <script src="/static/jquery.touchSwipe.min.js"></script>
+  <script src="/static/mainsub.js?191226"></script>
+  
+</body>
+</html>

@@ -36,6 +36,7 @@
 
     <div class="collapse navbar-collapse" id="home-menu">
       <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#diners">餐廳菜單</a></li>
         <li class="nav-item"><a class="nav-link" href="#contactus">聯絡我們</a></li>
       </ul>
     </div>
@@ -100,11 +101,44 @@
           </div>
           <div class="col-lg-6">
             <h3 class="texti-main">手機版菜單</h3>
-            <p>為我們台灣的優質餐廳和國民美食，提供適合智慧型手機瀏覽及分享的菜單專頁</p>
-            <p>我們的菜單專頁介面，採用手機友善優先的「響應式網頁設計」，顧客使用手機瀏覽菜單，肯定會感到相當方便</p>
+            <p>我們專門為台灣的優質餐廳，設計建置適合智慧型手機瀏覽及分享的菜單專頁</p>
+            <p>我們設計的菜單專頁介面，採用手機優先的「響應式網頁設計」技術。顧客使用手機瀏覽菜單，肯定會感到相當方便</p>
             <hr>
             <h3 class="texti-main">服務對象</h3>
-            <p>只要您認為需要給予您的顧客，更好的手機版菜單資訊瀏覽體驗，都歡迎與我們聯絡</p>
+            <p>只要您認為需要給予您的顧客，更好的手機版菜單瀏覽體驗，都歡迎與我們聯絡</p>
+          </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="container">
+    <div class="section-id" id="diners"></div>
+    <div class="jumbotron jumbotron-section">
+      <h2><span>餐廳菜單</span></h2>
+      <hr>
+    </div>
+    <section class="my-section text-center">
+      <div class="row po-class">
+          <div class="col-lg-4">
+            <div class="col-box" style="background-color: #1f1e1e;">
+                <a href="/mimashokudo" target="_blank">
+                    <div class="icon-class"><i class="fas fa-utensils"></i><br><br><br><span><i class="fas icon-text">覓馬食堂</i></span></div>
+                </a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="col-box" style="background-color: #a28a49;">
+                <a href="/dailypasta" target="_blank">
+                    <div class="icon-class"><i class="fas fa-utensils"></i><br><br><br><span><i class="fas icon-text">朵莉建工店</i></span></div>
+                </a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="col-box" style="background-color: #a28a49;">
+                <a href="/dailypasta" target="_blank">
+                    <div class="icon-class"><i class="fas fa-utensils"></i><br><br><br><span><i class="fas icon-text">朵莉自由店</i></span></div>
+                </a>
+            </div>
           </div>
       </div>
     </section>
@@ -136,6 +170,8 @@
   <br>
   <footer>
     <div class="container">
+      <input type="hidden" id="diner" value="https://khmenus.tw/">
+      <div id="qrcode" class="qrcode"></div>
       <div class="copy-right text-center">
         <hr>
         <p>&copy; 2020 易取行動科技</p>
@@ -146,6 +182,7 @@
   <script src="/static/jquery.min.js"></script>
   <script src="/static/bootstrap.min.js"></script>
   <script src="/static/jquery.touchSwipe.min.js"></script>
+  <script src="/static/qrcode.min.js"></script>
   <script src="/static/main.js?191226"></script>
 
 </body>

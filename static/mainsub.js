@@ -1,4 +1,4 @@
-// preloader 
+// preloader
 $(window).load(function() {
       $("#status").fadeOut();
       $("#preloader").delay(100).fadeOut("fast");
@@ -10,3 +10,17 @@ $(function() {
         $('.navbar-collapse').collapse('hide');
     });
 });
+
+var qrcode = new QRCode(document.getElementById("qrcode"), {
+    width: 120,
+    height: 120,
+    colorDark: "#ffffff",
+    colorLight: "#2e2e2e",
+});
+
+function makeCode () {
+    var elText = document.getElementById("diner");
+    qrcode.makeCode(elText.value);
+}
+
+makeCode();
